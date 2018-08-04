@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" />
+    <title>Exercises</title>
+</head>
+<body>
+    <h1>Exercises</h1>
+    <table>
+        <tr th:each="exercise : ${exercises}">
+            <p th:text="${exercise.username}" />
+            <p th:text="${exercise.description}" />
+            <p th:text="${exercise.duration}" />
+            <p th:text="${exercise.date}" />
+        </tr>
+    </table>
+    <br />
+    <a th:href="@{/home}">Home</a>
+</body>
+</html>

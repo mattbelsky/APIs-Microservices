@@ -15,8 +15,8 @@ public class AppController {
 
     @GetMapping("/api/whoami")
     public @ResponseBody ParsedHeader getWhoIAm(@RequestHeader(HttpHeaders.ACCEPT_LANGUAGE) String acceptLanguage,
-                           @RequestHeader(HttpHeaders.USER_AGENT) String userAgent,
-                           HttpServletRequest httpServletRequest) {
+                                                @RequestHeader(HttpHeaders.USER_AGENT) String userAgent,
+                                                HttpServletRequest httpServletRequest) {
         return new ParsedHeader(httpServletRequest.getRemoteAddr(), acceptLanguage, userAgent);
     }
 }
