@@ -24,7 +24,7 @@ Displays the IP address, language, and operating system and browser of the user'
 HTTP GET request.
 
 ## Exercise Tracker Microservice
-Spring Thymeleaf MVC app that records the exercises performed by registered users. 
+Spring Thymeleaf MVC app that records and displays the exercises performed by registered users. 
 
 Home page is accessed via "/" or "/home".
 
