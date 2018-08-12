@@ -47,4 +47,5 @@ The root page containing the input form can be accessed from the endpoints "/" o
 * Java 8
 * Spring Boot
 * Thymeleaf
+* MyBatis
 * Maven
