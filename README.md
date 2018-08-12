@@ -38,6 +38,11 @@ Aside from the endpoint mapped to the home page, most endpoints are accessible o
 ```
 HTTP GET request. Returns a view containing exercises performed by the specified user between (inclusive) the from and to dates, and limits the number of records accordingly.
 
+## File Metadata Microservice
+Allows the user to upload a file and returns the file's name and size in bytes. [Specifications here.](https://purple-paladin.glitch.me/)
+
+The root page containing the input form can be accessed from the endpoints "/" or "/home". The value of "PATH" in FileService.java should be replaced with the path to the directory where you wish to upload files.
+
 ## Tech Stack
 * Java 8
 * Spring Boot
