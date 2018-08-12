@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>File Metadata</title>
+</head>
+<body>
+    <h1>File Metadata Microservice</h1>
+    <p>Please upload a file.</p>
+    <!-- Note: the URL in the action property is absolute, not relative to any controller class-wide request mapping. -->
+    <form action="/" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" />
+        <input type="submit" value="Upload" />
+    </form>
+</body>
+</html>

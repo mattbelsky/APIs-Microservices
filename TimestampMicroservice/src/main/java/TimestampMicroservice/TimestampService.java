@@ -9,7 +9,7 @@ import java.time.*;
 public class TimestampService {
 
     /**
-     * Parses input as either an ISO-8601 formatted (YYYY-MM-DD) date or milliseconds from start of current era.
+     * Parses input as either an ISO-8601 formatted (YYYY-MM-DD) date or milliseconds from the start of the current era.
      * @param dateInput the user input
      * @return the response object containing the date in both millisecond and string form
      */
@@ -29,8 +29,8 @@ public class TimestampService {
             timestamp = new Timestamp(System.currentTimeMillis());
             return new DateResponse(timestamp.getTime(), timestamp.toString());
 
-        // If the input string has the format of XXXX-XX-XX, assign the year, month, and day to the appropriate variables,
-        // and use them to initialize the LocalDateTime object.
+        // If the input string has the format of XXXX-XX-XX, assign the year, month, and day to the appropriate
+        // variables, and use them to initialize the LocalDateTime object.
         } else if (dateInput.length() >= 5 &&
                    dateInput.substring(4, 5).equals("-") &&
                    dateInput.substring(7, 8).equals("-")) {
