@@ -41,7 +41,7 @@ HTTP GET request. Returns a view containing exercises performed by the specified
 ## File Metadata Microservice
 Allows the user to upload a file and returns the file's name and size in bytes. [Specifications here.](https://purple-paladin.glitch.me/)
 
-The root page containing the input form can be accessed from the endpoints "/" or "/home". The value of "PATH" in FileService.java should be replaced with the path to the directory where you wish to upload files.
+The root page containing the input form can be accessed from the endpoints "/" or "/home". Add "uploaddirectory=" followed by the directory to which you wish to upload files in an application.properties file.
 
 ## Tech Stack
 * Java 8
